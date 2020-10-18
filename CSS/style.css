@@ -1,0 +1,431 @@
+* {
+  text-decoration: none;
+  /*
+	margin: 0px;
+	padding: 0;*/
+}
+
+main {
+  padding-top: 10px; /* upor nicher padding section*/
+}
+
+/*main HEADER section*/
+header {
+  position: sticky;
+  box-shadow: 0px 0.3px 0.1px 0px #000;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+}
+
+header .header-brand {
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center; /*logo positio Center*/
+  padding: 0px;
+}
+
+header nav ul {
+  float: left;
+  margin-top: 0px;
+}
+
+header nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+/* its important*/
+header nav ul li a {
+  line-height: 50px;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  /*font-weight: 600; //font weight mota-chikon*/
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  padding: 0 10px; /* its important*/
+  text-decoration: none;
+  border-radius: 0px 0px 0px 0px;
+}
+
+header nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 0px; /* height speac*/
+  border-radius: 0px 0px 5px 5px; /* border style */
+  /*  border-top: 1px solid #4dffff;  */
+}
+
+header nav ul li:hover ul {
+  display: block;
+}
+
+header nav ul li ul li {
+  width: 180px;
+  border-radius: 4px;
+  border-top: 1px solid #4dffff;
+}
+
+/*tooltrip section*/
+header nav ul li ul::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent #4dffff transparent;
+}
+
+header nav ul li ul li {
+  visibility: visible;
+  transform: 0.3s ease all;
+}
+
+header nav ul li ul li a {
+  padding: 0 10px; /* height speac + dropdown-links*/
+  text-transform: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal; /* font weight mots-chikon*/
+  border-radius: 0px 0px 5px 5px;
+}
+
+header nav ul li ul li a:hover {
+  background-color: #ccffff;
+  transition: all 0.5s ease 0s;
+}
+
+/* Ul Hover effect */
+.a:hover {
+  color: blue;
+  transition: all 0.5s ease 0s;
+}
+
+header .header-cases {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    margin: 10px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid green;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 0px 0px 0px 5px; /* change nav link ?? (portfolio About Contact)*/
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 50px;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  header .header-cases {
+    display: block;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16px;
+    color: #737373;
+    line-height: 36px;
+    border: 1.3px solid #a6a6a6;
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    transition: border-radius 0.4s;
+    font-weight: bold;
+  }
+
+  header .header-cases:hover {
+    font-family: "Catamaran", sans-serif;
+    display: block;
+    border: 1.3px solid #f96714;
+    border-radius: 0px;
+    transition: border-radius background-color 0.5s;
+    color: #f96714;
+    font-weight: normal;
+    /*background-color: hsl(142, 75%, 98%);*/
+  }
+  .index-links div {
+    margin: 10px 10px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+  }
+}
+
+/*INDEX*/
+
+.index-banner {
+  width: 100%;
+  height: 500px;
+  background-image: url("../picture/flower.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 45px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 450px;
+  }
+
+  .index-banner h1 {
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    padding-bottom: 14px;
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 20px 10px 0;
+    height: 330px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+
+  .index-boxlink-square {
+    width: calc(25% - 20px) !important;
+  }
+
+  .index-boxlink-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+
+  .index-links div h3 {
+    line-height: 180px;
+  }
+}
+
+/*Cases*/
+
+.cases-links {
+  /*Gellary-section*/
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cases-links h2 {
+  /*Gellary-section*/
+  font-family: "Catamaran", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.cases-links .cases-link {
+  /*Gellary-section*/
+  float: left;
+  width: 230px;
+  height: 230px;
+  margin: 20px 10px 0px;
+  background-color: #e3e3e3;
+}
+
+.cases-links .cases-link p {
+  /*Gellary-section*/
+  padding-top: 40%;
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+.Contact {               
+	overflow: hidden;
+	margin-bottom: 20px;
+
+}
+
+.Contact-links {
+	width: 630px;
+	height: 330px;
+	margin: 5px 200px 0px;
+	background-color: #e3e3e3;
+}
+
+.Contact .Contact-links p {              
+	padding-top: 5%;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 24px;
+	color: #111;
+	text-align: center;
+	text-transform: uppercase;
+}
+*/
+main h2 {
+  margin-bottom: 5px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Footer*/
+
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 5px;
+  /*background: linear-gradient(to bottom, #33ccff -28%, #ffcccc 134%);  try this color*/
+  overflow: hidden;
+  /*background-color: #33475b;*/
+  background-color: #111;
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer ul li a {
+  /*[footer link Change]*/
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
+.footer-links-cases {
+  display: none;
+}
+
+.footer-sm {
+  width: 50px;
+  float: right;
+  font-size: 45px;
+}
+
+.footer-sm i {
+  width: 100%;
+  margin-top: 3px;
+  color: white;
+}
+
+.footer-sm i.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.footer-sm i.fa-instagram:hover {
+  color: #e1306c;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-links-cases {
+    display: block;
+  }
+
+  footer ul {
+    padding-right: 45px;
+  }
+
+  footer ul li p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    line-height: 15px;
+    margin-top: 1px;
+    text-transform: uppercase;
+  }
+  .footer-links-cases a {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 10px;
+    font-weight: 300;
+    text-transform: none;
+  }
+  .footer-links-cases a:hover {
+    color: lightgrey;
+  }
+}

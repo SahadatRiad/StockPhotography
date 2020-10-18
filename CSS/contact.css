@@ -1,0 +1,170 @@
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  height: 100px;
+  overflow: auto;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+/*=============================================*/
+
+button {
+  outline: none !important;
+  border: none;
+  background-color: #F96714;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  box-shadow: 0px 0px 25px 2px #ff00ff;
+}
+
+/*==============================*/
+
+
+.container-contact2 {
+  width: 94%; 
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.wrap-contact2 {
+  width: 380px;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 5px #AAA;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px 55px 90px 55px;
+}
+
+/*===========================================*/
+
+.contact2-form {
+  width: 100%;
+}
+
+.contact2-form-title {
+  display: block;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 38px;
+  color: #333333;
+  line-height: .8;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*================================================*/
+
+.wrap-input2 {
+  width: 100%;
+  border-bottom: .9px solid grey;
+  margin-bottom: 37px;
+}
+
+.input2 {
+  display: block;
+  width: 100%;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 14px;
+  color: black;
+  line-height: 1.2;
+}
+
+.focus-input2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input2::before {
+  content: "";
+  display: block;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.2px;
+  transition: all 0.4s;
+  background: #5fa8d3;
+}
+
+
+/*=================================*/
+input.input2 {
+  height: 45px;
+}
+
+input.input2 + .focus-input2::after {
+  top: 16px;
+  left: 0;
+}
+
+textarea.input2 {
+  min-height: 75px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+textarea.input2 + .focus-input2::after {
+  top: 16px;
+  left: 0;
+}
+
+.input2:focus + .focus-input2::after {
+  top: -13px;
+}
+
+.input2:focus + .focus-input2::before {
+  width: 100%;
+}
+
+/*============Button===========*/
+.container-contact2-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.contact2-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 244px;
+  height: 50px;
+  font-family: 'Sniglet', cursive;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/*================Responsive==================*/
+
+@media (max-width: 576px) {
+  .wrap-contact2 {
+    padding: 72px 15px 90px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
